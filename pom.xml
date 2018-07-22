@@ -23,6 +23,7 @@
 
 	<modules>
 		<module>cargo4j-model</module>
+		<module>cargo4j-exec</module>
 	</modules>
 	<build>
 		<pluginManagement>
