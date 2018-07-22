@@ -1,0 +1,2658 @@
+{
+	"packages": [
+		{
+			"name": "lazy_static",
+			"version": "1.0.2",
+			"id": "lazy_static 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A macro for declaring lazily evaluated statics in Rust.",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "spin",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.4.6",
+					"kind": null,
+					"rename": null,
+					"optional": true,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "lazy_static",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/lazy_static-1.0.2/src/lib.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "no_std",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/lazy_static-1.0.2/tests/no_std.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "test",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/lazy_static-1.0.2/tests/test.rs"
+				}
+			],
+			"features": {
+				"nightly": [],
+				"spin_no_std": [
+					"nightly",
+					"spin"
+				]
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/lazy_static-1.0.2/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Marvin Löbel <loebel.marvin@gmail.com>"
+			],
+			"categories": [
+				"no-std",
+				"rust-patterns",
+				"memory-management"
+			],
+			"keywords": [
+				"macro",
+				"lazy",
+				"static"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/rust-lang-nursery/lazy-static.rs"
+		},
+		{
+			"name": "winapi",
+			"version": "0.3.5",
+			"id": "winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Raw FFI bindings for all of Windows API.",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "winapi-i686-pc-windows-gnu",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.4",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "i686-pc-windows-gnu"
+				},
+				{
+					"name": "winapi-x86_64-pc-windows-gnu",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.4",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "x86_64-pc-windows-gnu"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "winapi",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-0.3.5/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-0.3.5/build.rs"
+				}
+			],
+			"features": {
+				"accctrl": [],
+				"aclapi": [],
+				"activation": [],
+				"appmgmt": [],
+				"audioclient": [],
+				"audiosessiontypes": [],
+				"avrt": [],
+				"basetsd": [],
+				"bcrypt": [],
+				"bits": [],
+				"bits10_1": [],
+				"bits1_5": [],
+				"bits2_0": [],
+				"bits2_5": [],
+				"bits3_0": [],
+				"bits4_0": [],
+				"bits5_0": [],
+				"bitscfg": [],
+				"bitsmsg": [],
+				"bugcodes": [],
+				"cderr": [],
+				"cfg": [],
+				"cfgmgr32": [],
+				"cguid": [],
+				"combaseapi": [],
+				"coml2api": [],
+				"commapi": [],
+				"commctrl": [],
+				"commdlg": [],
+				"commoncontrols": [],
+				"consoleapi": [],
+				"corsym": [],
+				"d2d1": [],
+				"d2d1_1": [],
+				"d2d1_2": [],
+				"d2d1_3": [],
+				"d2d1effectauthor": [],
+				"d2d1effects": [],
+				"d2d1effects_1": [],
+				"d2d1effects_2": [],
+				"d2d1svg": [],
+				"d2dbasetypes": [],
+				"d3d": [],
+				"d3d10": [],
+				"d3d10_1": [],
+				"d3d10_1shader": [],
+				"d3d10effect": [],
+				"d3d10misc": [],
+				"d3d10sdklayers": [],
+				"d3d10shader": [],
+				"d3d11": [],
+				"d3d11_1": [],
+				"d3d11_2": [],
+				"d3d11_3": [],
+				"d3d11_4": [],
+				"d3d11on12": [],
+				"d3d11sdklayers": [],
+				"d3d11shader": [],
+				"d3d12": [],
+				"d3d12sdklayers": [],
+				"d3d12shader": [],
+				"d3d9": [],
+				"d3d9caps": [],
+				"d3d9types": [],
+				"d3dcommon": [],
+				"d3dcompiler": [],
+				"d3dcsx": [],
+				"d3dx10core": [],
+				"d3dx10math": [],
+				"d3dx10mesh": [],
+				"datetimeapi": [],
+				"davclnt": [],
+				"dbghelp": [],
+				"dcommon": [],
+				"dcomp": [],
+				"dcompanimation": [],
+				"dcomptypes": [],
+				"dde": [],
+				"ddraw": [],
+				"ddrawi": [],
+				"ddrawint": [],
+				"debug": [],
+				"debugapi": [],
+				"devguid": [],
+				"devpkey": [],
+				"devpropdef": [],
+				"dinput": [],
+				"dinputd": [],
+				"dmksctl": [],
+				"dmusicc": [],
+				"docobj": [],
+				"documenttarget": [],
+				"dpa_dsa": [],
+				"dpapi": [],
+				"dsgetdc": [],
+				"dsound": [],
+				"dsrole": [],
+				"dvp": [],
+				"dwmapi": [],
+				"dwrite": [],
+				"dwrite_1": [],
+				"dwrite_2": [],
+				"dwrite_3": [],
+				"dxdiag": [],
+				"dxfile": [],
+				"dxgi": [],
+				"dxgi1_2": [],
+				"dxgi1_3": [],
+				"dxgi1_4": [],
+				"dxgi1_5": [],
+				"dxgi1_6": [],
+				"dxgidebug": [],
+				"dxgiformat": [],
+				"dxgitype": [],
+				"dxva2api": [],
+				"dxvahd": [],
+				"endpointvolume": [],
+				"errhandlingapi": [],
+				"everything": [],
+				"evntcons": [],
+				"evntprov": [],
+				"evntrace": [],
+				"excpt": [],
+				"fibersapi": [],
+				"fileapi": [],
+				"gl-gl": [],
+				"guiddef": [],
+				"handleapi": [],
+				"heapapi": [],
+				"hidclass": [],
+				"hidpi": [],
+				"hidsdi": [],
+				"hidusage": [],
+				"highlevelmonitorconfigurationapi": [],
+				"hstring": [],
+				"http": [],
+				"imm": [],
+				"impl-default": [],
+				"in6addr": [],
+				"inaddr": [],
+				"inspectable": [],
+				"interlockedapi": [],
+				"intsafe": [],
+				"ioapiset": [],
+				"jobapi": [],
+				"jobapi2": [],
+				"knownfolders": [],
+				"ksmedia": [],
+				"ktmtypes": [],
+				"ktmw32": [],
+				"libloaderapi": [],
+				"limits": [],
+				"lmaccess": [],
+				"lmalert": [],
+				"lmapibuf": [],
+				"lmat": [],
+				"lmcons": [],
+				"lmdfs": [],
+				"lmerrlog": [],
+				"lmjoin": [],
+				"lmmsg": [],
+				"lmremutl": [],
+				"lmrepl": [],
+				"lmserver": [],
+				"lmshare": [],
+				"lmstats": [],
+				"lmsvc": [],
+				"lmuse": [],
+				"lmwksta": [],
+				"lowlevelmonitorconfigurationapi": [],
+				"lsalookup": [],
+				"memoryapi": [],
+				"minschannel": [],
+				"minwinbase": [],
+				"minwindef": [],
+				"mmdeviceapi": [],
+				"mmeapi": [],
+				"mmreg": [],
+				"mmsystem": [],
+				"msaatext": [],
+				"mscat": [],
+				"mschapp": [],
+				"mssip": [],
+				"mstcpip": [],
+				"namedpipeapi": [],
+				"namespaceapi": [],
+				"nb30": [],
+				"ncrypt": [],
+				"ntddscsi": [],
+				"ntddser": [],
+				"ntdef": [],
+				"ntlsa": [],
+				"ntsecapi": [],
+				"ntstatus": [],
+				"oaidl": [],
+				"objbase": [],
+				"objidl": [],
+				"objidlbase": [],
+				"ocidl": [],
+				"oleauto": [],
+				"olectl": [],
+				"opmapi": [],
+				"pdh": [],
+				"perflib": [],
+				"physicalmonitorenumerationapi": [],
+				"playsoundapi": [],
+				"powerbase": [],
+				"powersetting": [],
+				"powrprof": [],
+				"processenv": [],
+				"processsnapshot": [],
+				"processthreadsapi": [],
+				"processtopologyapi": [],
+				"profileapi": [],
+				"propidl": [],
+				"propkeydef": [],
+				"propsys": [],
+				"prsht": [],
+				"psapi": [],
+				"qos": [],
+				"realtimeapiset": [],
+				"reason": [],
+				"restartmanager": [],
+				"restrictederrorinfo": [],
+				"rmxfguid": [],
+				"roapi": [],
+				"robuffer": [],
+				"roerrorapi": [],
+				"rpc": [],
+				"rpcdce": [],
+				"rpcndr": [],
+				"sapi": [],
+				"sapi51": [],
+				"sapi53": [],
+				"sapiddk": [],
+				"sapiddk51": [],
+				"schannel": [],
+				"sddl": [],
+				"securityappcontainer": [],
+				"securitybaseapi": [],
+				"servprov": [],
+				"setupapi": [],
+				"shellapi": [],
+				"shellscalingapi": [],
+				"shlobj": [],
+				"shobjidl": [],
+				"shobjidl_core": [],
+				"shtypes": [],
+				"spapidef": [],
+				"sporder": [],
+				"sql": [],
+				"sqlext": [],
+				"sqltypes": [],
+				"sqlucode": [],
+				"sspi": [],
+				"std": [],
+				"stralign": [],
+				"stringapiset": [],
+				"strmif": [],
+				"subauth": [],
+				"synchapi": [],
+				"sysinfoapi": [],
+				"systemtopologyapi": [],
+				"textstor": [],
+				"threadpoolapiset": [],
+				"threadpoollegacyapiset": [],
+				"timeapi": [],
+				"timezoneapi": [],
+				"tlhelp32": [],
+				"transportsettingcommon": [],
+				"tvout": [],
+				"unknwnbase": [],
+				"urlhist": [],
+				"urlmon": [],
+				"usb": [],
+				"usbiodef": [],
+				"usbspec": [],
+				"userenv": [],
+				"usp10": [],
+				"utilapiset": [],
+				"vadefs": [],
+				"vcruntime": [],
+				"vsbackup": [],
+				"vss": [],
+				"vsserror": [],
+				"vswriter": [],
+				"wct": [],
+				"werapi": [],
+				"winbase": [],
+				"wincodec": [],
+				"wincodecsdk": [],
+				"wincon": [],
+				"wincred": [],
+				"wincrypt": [],
+				"windef": [],
+				"windowsceip": [],
+				"windowsx": [],
+				"winefs": [],
+				"winerror": [],
+				"winevt": [],
+				"wingdi": [],
+				"winhttp": [],
+				"wininet": [],
+				"winineti": [],
+				"winioctl": [],
+				"winnetwk": [],
+				"winnls": [],
+				"winnt": [],
+				"winreg": [],
+				"winsafer": [],
+				"winscard": [],
+				"winsmcrd": [],
+				"winsock2": [],
+				"winspool": [],
+				"winstring": [],
+				"winsvc": [],
+				"winusb": [],
+				"winusbio": [],
+				"winuser": [],
+				"winver": [],
+				"wmistr": [],
+				"wnnc": [],
+				"wow64apiset": [],
+				"ws2def": [],
+				"ws2ipdef": [],
+				"ws2spi": [],
+				"ws2tcpip": [],
+				"wtypes": [],
+				"wtypesbase": [],
+				"xinput": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-0.3.5/Cargo.toml",
+			"metadata": {
+				"docs": {
+					"rs": {
+						"default-target": "x86_64-pc-windows-msvc",
+						"features": [
+							"everything"
+						]
+					}
+				}
+			},
+			"authors": [
+				"Peter Atashian <retep998@gmail.com>"
+			],
+			"categories": [
+				"external-ffi-bindings",
+				"no-std",
+				"os::windows-apis"
+			],
+			"keywords": [
+				"windows",
+				"ffi",
+				"win32",
+				"com",
+				"directx"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/retep998/winapi-rs"
+		},
+		{
+			"name": "bitflags",
+			"version": "1.0.3",
+			"id": "bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A macro to generate structures which behave like bitflags.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "bitflags",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-1.0.3/src/lib.rs"
+				}
+			],
+			"features": {
+				"default": [],
+				"example_generated": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-1.0.3/Cargo.toml",
+			"metadata": {
+				"docs": {
+					"rs": {
+						"features": [
+							"example_generated"
+						]
+					}
+				}
+			},
+			"authors": [
+				"The Rust Project Developers"
+			],
+			"categories": [
+				"no-std"
+			],
+			"keywords": [
+				"bit",
+				"bitmask",
+				"bitflags",
+				"flags"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/rust-lang-nursery/bitflags"
+		},
+		{
+			"name": "openssl",
+			"version": "0.10.10",
+			"id": "openssl 0.10.10 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "Apache-2.0",
+			"license_file": null,
+			"description": "OpenSSL bindings",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "bitflags",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "cfg-if",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "foreign-types",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "lazy_static",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "openssl-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.9.33",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "data-encoding",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^2.0",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "hex",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "tempdir",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "openssl",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.10/src/lib.rs"
+				},
+				{
+					"kind": [
+						"example"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "mk_certs",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.10/examples/mk_certs.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.10/build.rs"
+				}
+			],
+			"features": {
+				"v101": [],
+				"v102": [],
+				"v110": [],
+				"v111": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.10/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [
+				"cryptography",
+				"api-bindings"
+			],
+			"keywords": [
+				"crypto",
+				"tls",
+				"ssl",
+				"dtls"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/sfackler/rust-openssl"
+		},
+		{
+			"name": "core-foundation-sys",
+			"version": "0.5.1",
+			"id": "core-foundation-sys 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT / Apache-2.0",
+			"license_file": null,
+			"description": "Bindings to Core Foundation for OS X",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "core-foundation-sys",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-sys-0.5.1/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-sys-0.5.1/build.rs"
+				}
+			],
+			"features": {
+				"mac_os_10_7_support": [],
+				"mac_os_10_8_features": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-sys-0.5.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"The Servo Project Developers"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://github.com/servo/core-foundation-rs"
+		},
+		{
+			"name": "winapi-x86_64-pc-windows-gnu",
+			"version": "0.4.0",
+			"id": "winapi-x86_64-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Import libraries for the x86_64-pc-windows-gnu target. Please don't use this crate directly, depend on winapi instead.",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "winapi-x86_64-pc-windows-gnu",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-x86_64-pc-windows-gnu-0.4.0/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-x86_64-pc-windows-gnu-0.4.0/build.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-x86_64-pc-windows-gnu-0.4.0/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Peter Atashian <retep998@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"windows"
+			],
+			"readme": null,
+			"repository": "https://github.com/retep998/winapi-rs"
+		},
+		{
+			"name": "native-tls",
+			"version": "0.2.0",
+			"id": "native-tls 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A wrapper over a platform's native TLS implementation",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "hex",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "lazy_static",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(any(target_os = \"macos\", target_os = \"ios\"))"
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(any(target_os = \"macos\", target_os = \"ios\"))"
+				},
+				{
+					"name": "security-framework",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(any(target_os = \"macos\", target_os = \"ios\"))"
+				},
+				{
+					"name": "security-framework-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(any(target_os = \"macos\", target_os = \"ios\"))"
+				},
+				{
+					"name": "tempfile",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^3.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(any(target_os = \"macos\", target_os = \"ios\"))"
+				},
+				{
+					"name": "openssl",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.10.9",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(not(any(target_os = \"windows\", target_os = \"macos\", target_os = \"ios\")))"
+				},
+				{
+					"name": "openssl-probe",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(not(any(target_os = \"windows\", target_os = \"macos\", target_os = \"ios\")))"
+				},
+				{
+					"name": "openssl-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.9.30",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(not(any(target_os = \"windows\", target_os = \"macos\", target_os = \"ios\")))"
+				},
+				{
+					"name": "schannel",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.1.13",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(target_os = \"windows\")"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "native-tls",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/native-tls-0.2.0/src/lib.rs"
+				},
+				{
+					"kind": [
+						"example"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "google-connect",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/native-tls-0.2.0/examples/google-connect.rs"
+				},
+				{
+					"kind": [
+						"example"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "simple-server",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/native-tls-0.2.0/examples/simple-server.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/native-tls-0.2.0/build.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/native-tls-0.2.0/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/sfackler/rust-native-tls"
+		},
+		{
+			"name": "openssl-sys",
+			"version": "0.9.33",
+			"id": "openssl-sys 0.9.33 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT",
+			"license_file": null,
+			"description": "FFI bindings to OpenSSL",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "cc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0",
+					"kind": "build",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "pkg-config",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3.9",
+					"kind": "build",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "vcpkg",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": "build",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(target_env = \"msvc\")"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "openssl-sys",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-sys-0.9.33/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-main",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-sys-0.9.33/build/main.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-sys-0.9.33/Cargo.toml",
+			"metadata": {
+				"pkg-config": {
+					"openssl": "1.0.1"
+				}
+			},
+			"authors": [
+				"Alex Crichton <alex@alexcrichton.com>",
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [
+				"cryptography",
+				"external-ffi-bindings"
+			],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/sfackler/rust-openssl"
+		},
+		{
+			"name": "tempfile",
+			"version": "3.0.2",
+			"id": "tempfile 3.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A library for managing temporary files and directories.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "rand",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.4",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "remove_dir_all",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "redox_syscall",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(target_os = \"redox\")"
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2.27",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(unix)"
+				},
+				{
+					"name": "winapi",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [
+						"fileapi",
+						"winbase",
+						"handleapi"
+					],
+					"target": "cfg(windows)"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "tempfile",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.0.2/src/lib.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "tempdir",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.0.2/tests/tempdir.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "namedtempfile",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.0.2/tests/namedtempfile.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "tempfile",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.0.2/tests/tempfile.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.0.2/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Allen <steven@stebalien.com>",
+				"The Rust Project Developers",
+				"Ashley Mannix <ashleymannix@live.com.au>",
+				"Jason White <jasonaw0@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"tempfile",
+				"tmpfile",
+				"filesystem"
+			],
+			"readme": null,
+			"repository": "https://github.com/Stebalien/tempfile"
+		},
+		{
+			"name": "fuchsia-zircon",
+			"version": "0.3.3",
+			"id": "fuchsia-zircon 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "BSD-3-Clause",
+			"license_file": null,
+			"description": "Rust bindings for the Zircon kernel",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "bitflags",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "fuchsia-zircon-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3.3",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "fuchsia-zircon",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/fuchsia-zircon-0.3.3/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/fuchsia-zircon-0.3.3/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Raph Levien <raph@google.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://fuchsia.googlesource.com/garnet/"
+		},
+		{
+			"name": "foreign-types",
+			"version": "0.3.2",
+			"id": "foreign-types 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A framework for Rust wrappers over C APIs",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "foreign-types-shared",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "foreign-types",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/foreign-types-0.3.2/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/foreign-types-0.3.2/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/sfackler/foreign-types"
+		},
+		{
+			"name": "libc",
+			"version": "0.2.42",
+			"id": "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A library for types and bindings to native C functions often found in libc or\nother common platform libraries.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "libc",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.42/src/lib.rs"
+				}
+			],
+			"features": {
+				"default": [
+					"use_std"
+				],
+				"use_std": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.42/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"The Rust Project Developers"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/rust-lang/libc"
+		},
+		{
+			"name": "vcpkg",
+			"version": "0.2.4",
+			"id": "vcpkg 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A library to find native dependencies in a vcpkg tree at build\ntime in order to be used in Cargo build scripts.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "lazy_static",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "tempdir",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3.7",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "vcpkg",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/vcpkg-0.2.4/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/vcpkg-0.2.4/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Jim McGrath <jimmc2@gmail.com>"
+			],
+			"categories": [
+				"os::windows-apis"
+			],
+			"keywords": [
+				"build-dependencies",
+				"windows",
+				"ffi",
+				"win32"
+			],
+			"readme": "../README.md",
+			"repository": "https://github.com/mcgoo/vcpkg-rs"
+		},
+		{
+			"name": "winapi-i686-pc-windows-gnu",
+			"version": "0.4.0",
+			"id": "winapi-i686-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Import libraries for the i686-pc-windows-gnu target. Please don't use this crate directly, depend on winapi instead.",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "winapi-i686-pc-windows-gnu",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-i686-pc-windows-gnu-0.4.0/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-i686-pc-windows-gnu-0.4.0/build.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-i686-pc-windows-gnu-0.4.0/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Peter Atashian <retep998@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"windows"
+			],
+			"readme": null,
+			"repository": "https://github.com/retep998/winapi-rs"
+		},
+		{
+			"name": "redox_syscall",
+			"version": "0.1.40",
+			"id": "redox_syscall 0.1.40 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT",
+			"license_file": null,
+			"description": "A Rust library to access raw Redox system calls",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "syscall",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/redox_syscall-0.1.40/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/redox_syscall-0.1.40/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Jeremy Soller <jackpot51@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://github.com/redox-os/syscall"
+		},
+		{
+			"name": "schannel",
+			"version": "0.1.13",
+			"id": "schannel 0.1.13 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT",
+			"license_file": null,
+			"description": "Schannel bindings for rust, allowing SSL/TLS (e.g. https) without openssl",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "lazy_static",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "winapi",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [
+						"lmcons",
+						"minschannel",
+						"securitybaseapi",
+						"schannel",
+						"sysinfoapi",
+						"timezoneapi",
+						"winbase",
+						"wincrypt",
+						"winerror"
+					],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "schannel",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/schannel-0.1.13/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/schannel-0.1.13/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>",
+				"Steffen Butzer <steffen.butzer@outlook.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"windows",
+				"schannel",
+				"tls",
+				"ssl",
+				"https"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/steffengy/schannel-rs"
+		},
+		{
+			"name": "security-framework",
+			"version": "0.2.1",
+			"id": "security-framework 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Security Framework bindings",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "core-foundation",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "core-foundation-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "security-framework-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "hex",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "tempdir",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "security-framework",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-0.2.1/src/lib.rs"
+				},
+				{
+					"kind": [
+						"example"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "client",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-0.2.1/examples/client.rs"
+				}
+			],
+			"features": {
+				"OSX_10_10": [
+					"OSX_10_9",
+					"security-framework-sys/OSX_10_10"
+				],
+				"OSX_10_11": [
+					"OSX_10_10",
+					"security-framework-sys/OSX_10_11"
+				],
+				"OSX_10_12": [
+					"OSX_10_11",
+					"security-framework-sys/OSX_10_11"
+				],
+				"OSX_10_9": [
+					"security-framework-sys/OSX_10_9"
+				],
+				"nightly": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-0.2.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"OSX",
+				"iOS",
+				"TLS",
+				"SSL",
+				"crypto"
+			],
+			"readme": "../README.md",
+			"repository": "https://github.com/sfackler/rust-security-framework"
+		},
+		{
+			"name": "core-foundation",
+			"version": "0.5.1",
+			"id": "core-foundation 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT / Apache-2.0",
+			"license_file": null,
+			"description": "Bindings to Core Foundation for OS X",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "chrono",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.4",
+					"kind": null,
+					"rename": null,
+					"optional": true,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "core-foundation-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "uuid",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5",
+					"kind": null,
+					"rename": null,
+					"optional": true,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "core-foundation",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-0.5.1/src/lib.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "use_macro_outside_crate",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-0.5.1/tests/use_macro_outside_crate.rs"
+				}
+			],
+			"features": {
+				"mac_os_10_7_support": [
+					"core-foundation-sys/mac_os_10_7_support"
+				],
+				"mac_os_10_8_features": [
+					"core-foundation-sys/mac_os_10_8_features"
+				],
+				"with-chrono": [
+					"chrono"
+				],
+				"with-uuid": [
+					"uuid"
+				]
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/core-foundation-0.5.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"The Servo Project Developers"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://github.com/servo/core-foundation-rs"
+		},
+		{
+			"name": "fuchsia-zircon-sys",
+			"version": "0.3.3",
+			"id": "fuchsia-zircon-sys 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "BSD-3-Clause",
+			"license_file": null,
+			"description": "Low-level Rust bindings for the Zircon kernel",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "fuchsia-zircon-sys",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/fuchsia-zircon-sys-0.3.3/src/lib.rs"
+				},
+				{
+					"kind": [
+						"example"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "hello",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/fuchsia-zircon-sys-0.3.3/examples/hello.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/fuchsia-zircon-sys-0.3.3/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Raph Levien <raph@google.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://fuchsia.googlesource.com/garnet/"
+		},
+		{
+			"name": "cc",
+			"version": "1.0.18",
+			"id": "cc 1.0.18 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A build-time dependency for Cargo build scripts to assist in invoking the native\nC compiler to compile native C code into a static archive to be linked into Rust\ncode.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "rayon",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1.0",
+					"kind": null,
+					"rename": null,
+					"optional": true,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "tempdir",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "cc",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.18/src/lib.rs"
+				},
+				{
+					"kind": [
+						"bin"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "gcc-shim",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.18/src/bin/gcc-shim.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "cc_env",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.18/tests/cc_env.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "test",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.18/tests/test.rs"
+				}
+			],
+			"features": {
+				"parallel": [
+					"rayon"
+				]
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cc-1.0.18/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Alex Crichton <alex@alexcrichton.com>"
+			],
+			"categories": [
+				"development-tools"
+			],
+			"keywords": [
+				"build-dependencies"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/alexcrichton/cc-rs"
+		},
+		{
+			"name": "cfg-if",
+			"version": "0.1.4",
+			"id": "cfg-if 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A macro to ergonomically define an item depending on a large number of #[cfg]\nparameters. Structured like an if-else chain, the first matching branch is the\nitem that gets emitted.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "cfg-if",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cfg-if-0.1.4/src/lib.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "xcrate",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cfg-if-0.1.4/tests/xcrate.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/cfg-if-0.1.4/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Alex Crichton <alex@alexcrichton.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/alexcrichton/cfg-if"
+		},
+		{
+			"name": "openssl-probe",
+			"version": "0.1.2",
+			"id": "openssl-probe 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Tool for helping to find SSL certificate locations on the system for OpenSSL\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "openssl-probe",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-probe-0.1.2/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-probe-0.1.2/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Alex Crichton <alex@alexcrichton.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": "README.md",
+			"repository": "https://github.com/alexcrichton/openssl-probe"
+		},
+		{
+			"name": "remove_dir_all",
+			"version": "0.5.1",
+			"id": "remove_dir_all 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A safe, reliable implementation of remove_dir_all for Windows",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "winapi",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [
+						"std",
+						"errhandlingapi",
+						"winerror",
+						"fileapi",
+						"winbase"
+					],
+					"target": "cfg(windows)"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "remove_dir_all",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/remove_dir_all-0.5.1/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/remove_dir_all-0.5.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Aaronepower <theaaronepower@gmail.com>"
+			],
+			"categories": [
+				"filesystem"
+			],
+			"keywords": [
+				"utility",
+				"filesystem",
+				"remove_dir",
+				"windows"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/Aaronepower/remove_dir_all.git"
+		},
+		{
+			"name": "rust-typesystem-playground",
+			"version": "0.1.0",
+			"id": "rust-typesystem-playground 0.1.0 (path+file:///home/bernd/CLionProjects/rust-typesystem-playground)",
+			"license": null,
+			"license_file": null,
+			"description": null,
+			"source": null,
+			"dependencies": [
+				{
+					"name": "native-tls",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2.0",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"bin"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "rust-typesystem-playground",
+					"src_path": "/home/bernd/CLionProjects/rust-typesystem-playground/src/main.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/CLionProjects/rust-typesystem-playground/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"bernd"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": null
+		},
+		{
+			"name": "pkg-config",
+			"version": "0.3.11",
+			"id": "pkg-config 0.3.11 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "A library to run the pkg-config system tool at build time in order to be used in\nCargo build scripts.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "lazy_static",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^1",
+					"kind": "dev",
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "pkg-config",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/pkg-config-0.3.11/src/lib.rs"
+				},
+				{
+					"kind": [
+						"test"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "test",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/pkg-config-0.3.11/tests/test.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/pkg-config-0.3.11/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Alex Crichton <alex@alexcrichton.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"build-dependencies"
+			],
+			"readme": null,
+			"repository": "https://github.com/alexcrichton/pkg-config-rs"
+		},
+		{
+			"name": "security-framework-sys",
+			"version": "0.2.1",
+			"id": "security-framework-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Security Framework bindings",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "core-foundation-sys",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.5.1",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": null
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "security-framework-sys",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-sys-0.2.1/src/lib.rs"
+				},
+				{
+					"kind": [
+						"custom-build"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "build-script-build",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-sys-0.2.1/build.rs"
+				}
+			],
+			"features": {
+				"OSX_10_10": [
+					"OSX_10_9"
+				],
+				"OSX_10_11": [
+					"OSX_10_10"
+				],
+				"OSX_10_12": [
+					"OSX_10_11"
+				],
+				"OSX_10_9": []
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/security-framework-sys-0.2.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [
+				"OSX",
+				"iOS",
+				"TLS",
+				"SSL",
+				"crypto"
+			],
+			"readme": "../README.md",
+			"repository": "https://github.com/sfackler/rust-security-framework"
+		},
+		{
+			"name": "rand",
+			"version": "0.4.2",
+			"id": "rand 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "Random number generators and other randomness functionality.\n",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [
+				{
+					"name": "fuchsia-zircon",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3.2",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(target_os = \"fuchsia\")"
+				},
+				{
+					"name": "libc",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.2",
+					"kind": null,
+					"rename": null,
+					"optional": true,
+					"uses_default_features": true,
+					"features": [],
+					"target": "cfg(unix)"
+				},
+				{
+					"name": "winapi",
+					"source": "registry+https://github.com/rust-lang/crates.io-index",
+					"req": "^0.3",
+					"kind": null,
+					"rename": null,
+					"optional": false,
+					"uses_default_features": true,
+					"features": [
+						"minwindef",
+						"ntsecapi",
+						"profileapi",
+						"winnt"
+					],
+					"target": "cfg(windows)"
+				}
+			],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "rand",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/src/lib.rs"
+				},
+				{
+					"kind": [
+						"bench"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "generators",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/benches/generators.rs"
+				},
+				{
+					"kind": [
+						"bench"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "misc",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/benches/misc.rs"
+				},
+				{
+					"kind": [
+						"bench"
+					],
+					"crate_types": [
+						"bin"
+					],
+					"name": "bench",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/benches/bench.rs"
+				}
+			],
+			"features": {
+				"alloc": [],
+				"default": [
+					"std"
+				],
+				"i128_support": [],
+				"nightly": [
+					"i128_support"
+				],
+				"std": [
+					"libc"
+				]
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.4.2/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"The Rust Project Developers"
+			],
+			"categories": [
+				"algorithms"
+			],
+			"keywords": [
+				"random",
+				"rng"
+			],
+			"readme": "README.md",
+			"repository": "https://github.com/rust-lang-nursery/rand"
+		},
+		{
+			"name": "foreign-types-shared",
+			"version": "0.1.1",
+			"id": "foreign-types-shared 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+			"license": "MIT/Apache-2.0",
+			"license_file": null,
+			"description": "An internal crate used by foreign-types",
+			"source": "registry+https://github.com/rust-lang/crates.io-index",
+			"dependencies": [],
+			"targets": [
+				{
+					"kind": [
+						"lib"
+					],
+					"crate_types": [
+						"lib"
+					],
+					"name": "foreign-types-shared",
+					"src_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/foreign-types-shared-0.1.1/src/lib.rs"
+				}
+			],
+			"features": {
+				
+			},
+			"manifest_path": "/home/bernd/.cargo/registry/src/github.com-1ecc6299db9ec823/foreign-types-shared-0.1.1/Cargo.toml",
+			"metadata": null,
+			"authors": [
+				"Steven Fackler <sfackler@gmail.com>"
+			],
+			"categories": [],
+			"keywords": [],
+			"readme": null,
+			"repository": "https://github.com/sfackler/foreign-types"
+		}
+	],
+	"workspace_members": [
+		"rust-typesystem-playground 0.1.0 (path+file:///home/bernd/CLionProjects/rust-typesystem-playground)"
+	],
+	"resolve": {
+		"nodes": [
+			{
+				"id": "foreign-types-shared 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "rust-typesystem-playground 0.1.0 (path+file:///home/bernd/CLionProjects/rust-typesystem-playground)",
+				"dependencies": [
+					"native-tls 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "foreign-types 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"foreign-types-shared 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "fuchsia-zircon 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+					"fuchsia-zircon-sys 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"winapi-x86_64-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+					"winapi-i686-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": [
+					"errhandlingapi",
+					"fileapi",
+					"handleapi",
+					"lmcons",
+					"minschannel",
+					"minwindef",
+					"ntsecapi",
+					"profileapi",
+					"schannel",
+					"securitybaseapi",
+					"std",
+					"sysinfoapi",
+					"timezoneapi",
+					"winbase",
+					"wincrypt",
+					"winerror",
+					"winnt"
+				]
+			},
+			{
+				"id": "redox_syscall 0.1.40 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "openssl-probe 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": [
+					"default",
+					"use_std"
+				]
+			},
+			{
+				"id": "cc 1.0.18 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "fuchsia-zircon-sys 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "winapi-x86_64-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "core-foundation-sys 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": [
+					"default"
+				]
+			},
+			{
+				"id": "native-tls 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"openssl-probe 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"lazy_static 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"tempfile 3.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"security-framework 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"openssl 0.10.10 (registry+https://github.com/rust-lang/crates.io-index)",
+					"openssl-sys 0.9.33 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+					"schannel 0.1.13 (registry+https://github.com/rust-lang/crates.io-index)",
+					"security-framework-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "security-framework-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"core-foundation-sys 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "security-framework 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"core-foundation-sys 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+					"core-foundation 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"security-framework-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "vcpkg 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "core-foundation 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"core-foundation-sys 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "openssl 0.10.10 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"foreign-types 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"cfg-if 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+					"lazy_static 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"openssl-sys 0.9.33 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+					"bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "schannel 0.1.13 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"lazy_static 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "openssl-sys 0.9.33 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+					"pkg-config 0.3.11 (registry+https://github.com/rust-lang/crates.io-index)",
+					"vcpkg 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
+					"cc 1.0.18 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "tempfile 3.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"remove_dir_all 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+					"redox_syscall 0.1.40 (registry+https://github.com/rust-lang/crates.io-index)",
+					"winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+					"rand 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "pkg-config 0.3.11 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "rand 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+					"winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+					"fuchsia-zircon 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": [
+					"default",
+					"libc",
+					"std"
+				]
+			},
+			{
+				"id": "winapi-i686-pc-windows-gnu 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "remove_dir_all 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [
+					"winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)"
+				],
+				"features": []
+			},
+			{
+				"id": "lazy_static 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			},
+			{
+				"id": "cfg-if 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+				"dependencies": [],
+				"features": []
+			}
+		],
+		"root": "rust-typesystem-playground 0.1.0 (path+file:///home/bernd/CLionProjects/rust-typesystem-playground)"
+	},
+	"target_directory": "/home/bernd/CLionProjects/rust-typesystem-playground/target",
+	"version": 1,
+	"workspace_root": "/home/bernd/CLionProjects/rust-typesystem-playground"
+}
