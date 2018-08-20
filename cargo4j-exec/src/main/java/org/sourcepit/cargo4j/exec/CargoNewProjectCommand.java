@@ -18,8 +18,12 @@ public class CargoNewProjectCommand {
 		final ByteArrayOutputStream out = new ByteArrayOutputStream();
 		final PumpStreamHandler streamHandler = new PumpStreamHandler(out, err);
 
+		final File workingDirectory = cargoProject.getParentFile();
+		
+		workingDirectory.mkdirs();
+		
 		final DefaultExecutor executor = new DefaultExecutor();
-		executor.setWorkingDirectory(cargoProject.getParentFile());
+		executor.setWorkingDirectory(workingDirectory);
 		executor.setStreamHandler(streamHandler);
 
 		final int exitValue = executor.execute(cmdLine);
