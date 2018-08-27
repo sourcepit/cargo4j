@@ -1,4 +1,4 @@
-package org.sourcepit.cargo4j.model;
+package org.sourcepit.cargo4j.model.metadata;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.junit.Test;
+import org.sourcepit.cargo4j.model.metadata.Metadata;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;

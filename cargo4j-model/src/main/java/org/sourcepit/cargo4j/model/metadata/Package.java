@@ -1,4 +1,4 @@
-package org.sourcepit.cargo4j.model;
+package org.sourcepit.cargo4j.model.metadata;
 
 import java.util.List;
 import java.util.Map;
