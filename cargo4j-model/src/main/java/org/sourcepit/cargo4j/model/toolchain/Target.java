@@ -9,7 +9,7 @@ public class Target {
 
 	private final static Set<String> VENDORS = new HashSet<>(Arrays.asList("unknown", "pc", "none"));
 
-	private final String arch;
+	private final String family;
 	private final Optional<String> vendor;
 	private final String os;
 
@@ -37,13 +37,13 @@ public class Target {
 	}
 
 	private Target(String arch, Optional<String> vendor, String os) {
-		this.arch = arch;
+		this.family = arch;
 		this.vendor = vendor;
 		this.os = os;
 	}
 
-	public String getArch() {
-		return arch;
+	public String getFamily() {
+		return family;
 	}
 
 	public Optional<String> getVendor() {
@@ -58,7 +58,7 @@ public class Target {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((arch == null) ? 0 : arch.hashCode());
+		result = prime * result + ((family == null) ? 0 : family.hashCode());
 		result = prime * result + ((os == null) ? 0 : os.hashCode());
 		result = prime * result + ((vendor == null) ? 0 : vendor.hashCode());
 		return result;
@@ -76,11 +76,11 @@ public class Target {
 			return false;
 		}
 		Target other = (Target) obj;
-		if (arch == null) {
-			if (other.arch != null) {
+		if (family == null) {
+			if (other.family != null) {
 				return false;
 			}
-		} else if (!arch.equals(other.arch)) {
+		} else if (!family.equals(other.family)) {
 			return false;
 		}
 		if (os == null) {
@@ -103,7 +103,7 @@ public class Target {
 	@Override
 	public String toString() {
 		final StringBuilder str = new StringBuilder();
-		str.append(arch);
+		str.append(family);
 		if (vendor.isPresent()) {
 			str.append('-');
 			str.append(vendor.get());

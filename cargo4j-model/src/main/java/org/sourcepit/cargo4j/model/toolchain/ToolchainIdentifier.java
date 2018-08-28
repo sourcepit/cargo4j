@@ -4,13 +4,13 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Optional;
 
-public class Toolchain {
+public class ToolchainIdentifier {
 
 	private final String channel;
 	private final Optional<LocalDate> date;
 	private final Optional<Target> target;
 
-	public static Toolchain parse(String string) {
+	public static ToolchainIdentifier parse(String string) {
 
 		final String[] segments = string.split("-");
 
@@ -48,10 +48,10 @@ public class Toolchain {
 			target = Optional.empty();
 		}
 
-		return new Toolchain(channel, date, target);
+		return new ToolchainIdentifier(channel, date, target);
 	}
 
-	private Toolchain(String channel, Optional<LocalDate> date, Optional<Target> target) {
+	private ToolchainIdentifier(String channel, Optional<LocalDate> date, Optional<Target> target) {
 		this.channel = channel;
 		this.date = date;
 		this.target = target;
@@ -90,7 +90,7 @@ public class Toolchain {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		Toolchain other = (Toolchain) obj;
+		ToolchainIdentifier other = (ToolchainIdentifier) obj;
 		if (channel == null) {
 			if (other.channel != null) {
 				return false;
